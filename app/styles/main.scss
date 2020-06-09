@@ -19,8 +19,9 @@ Note: any .css or .scss files included in the 'styles' directory
 will be correctly compiled during `gulp serve` and `gulp`
  */
 
-html, body {
-  font-family: 'Roboto', 'Helvetica', sans-serif;
+html,
+body {
+  font-family: "Roboto", "Helvetica", sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -87,7 +88,7 @@ html, body {
   color: inherit;
 }
 .mdl-demo .mdl-card__actions a {
-  color: #00BCD4;
+  color: #00bcd4;
   margin: 0;
 }
 .mdl-demo .mdl-card__actions a:hover,
@@ -115,7 +116,7 @@ html, body {
 .mdl-demo #features section.section--center {
   max-width: 620px;
 }
-.mdl-demo section > header{
+.mdl-demo section > header {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -175,7 +176,7 @@ html, body {
   margin: 0 -8px -8px -8px;
 }
 .mdl-demo section.section--center .section__text:not(:last-child) {
-  border-bottom: 1px solid rgba(0,0,0,.13);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.13);
 }
 .mdl-demo .mdl-card .mdl-card__supporting-text > h3:first-child {
   margin-bottom: 24px;
@@ -186,11 +187,12 @@ html, body {
 .mdl-demo #features section {
   margin-bottom: 72px;
 }
-.mdl-demo #features h4, #features h5 {
+.mdl-demo #features h4,
+#features h5 {
   margin-bottom: 16px;
 }
 .mdl-demo .toc {
-  border-left: 4px solid #C1EEF4;
+  border-left: 4px solid #c1eef4;
   margin: 24px;
   padding: 0;
   padding-left: 8px;
@@ -202,7 +204,7 @@ html, body {
   margin-top: 0;
 }
 .mdl-demo .toc a {
-  color: #4DD0E1;
+  color: #4dd0e1;
   text-decoration: none;
   font-size: 16px;
   line-height: 28px;
@@ -210,4 +212,211 @@ html, body {
 }
 .mdl-demo .mdl-menu__container {
   z-index: 99;
+}
+/*   */
+.wrapper {
+  width: 100%;
+  height: auto;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  p {
+    font-size: 1rem;
+  }
+}
+.personal-info {
+  display: flex;
+  background-color: lightgray;
+}
+.title {
+  p {
+    text-transform: uppercase;
+    font-weight: 900;
+  }
+}
+.pi-left {
+  display: flex;
+  justify-content: flex-end;
+  width: 10%;
+  box-sizing: border-box;
+  padding: 0 10px;
+  p {
+    font-size: 2rem;
+  }
+}
+
+.pi-center {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+.pi-right {
+  width: 10%;
+}
+.inputs {
+  display: flex;
+}
+.personal-info {
+  padding: 10px 0;
+}
+.two-inputs {
+  display: flex;
+  flex-wrap: wrap;
+}
+input {
+  flex: 1;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  height: 3rem;
+  border: none;
+  border-radius: 3px;
+}
+.submit-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 0.3rem;
+  margin-right: 0.5rem;
+  height: 3rem;
+  background-color: green;
+  margin-top: 1rem;
+  text-transform: uppercase;
+  color: white;
+}
+.form-group {
+  display: flex;
+  flex: 1;
+  &.country {
+    margin-right: 1rem;
+    box-sizing: border-box;
+    height: 3rem;
+    position: relative;
+    background-color: white;
+    border-radius: 3px;
+  }
+  &.security-code {
+    position: relative;
+    &:after {
+      font-family: "Material Icons";
+      content: "help_outline";
+      position: absolute;
+      right: 1rem;
+      line-height: 3rem;
+    }
+  }
+  &.credit-card {
+    position: relative;
+    &:after {
+      font-family: "Material Icons";
+      content: "credit_card";
+      position: absolute;
+      right: 1rem;
+      line-height: 3rem;
+    }
+  }
+  label {
+    padding: 0.2rem;
+    position: absolute;
+    font-size: 0.8rem;
+    &#country {
+      z-index: 1;
+    }
+  }
+  input {
+    box-sizing: border-box;
+    padding: 20px 0 0.2rem 0.2rem;
+    font-size: 1rem;
+  }
+  select {
+    flex: 1;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    height: 3rem;
+    border: none;
+    border-radius: 3px;
+    box-sizing: border-box;
+    padding: 20px 0 0.2rem 0.2rem;
+    font-size: 1rem;
+    &#countries {
+      position: absolute;
+      width: 95%;
+      top: 1rem;
+      padding: 0 0 0 0.2rem;
+      box-sizing: border-box;
+      appearance: none;
+      &:-ms-expand {
+        display: none;
+      }
+      height: 2rem;
+      margin: 0;
+      background-color: white;
+    }
+  }
+}
+.one-input {
+  display: flex;
+}
+.personal-info-inputs {
+  display: flex;
+  flex-direction: column;
+  width: 66%;
+}
+.personal-info-order {
+  width: 33%;
+  background-color: white;
+  border-radius: 3px;
+  box-sizing: border-box;
+  padding: 5px;
+}
+.personal-info-order-inner {
+  border: 1px dotted grey;
+  border-radius: 3px;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 5px;
+}
+
+.first {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.order-part {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  border-bottom: 1px dotted gray;
+  &:first-of-type {
+    .row:first-of-type {
+      p:first-of-type {
+        font-weight: 900;
+        text-transform: uppercase;
+      }
+    }
+  }
+  &.summary {
+    border-bottom: none;
+    p {
+      font-weight: 900;
+    }
+    p:first-child {
+      text-transform: capitalize;
+    }
+    p:last-child {
+      font-size: 25px;
+    }
+  }
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  p {
+    text-transform: capitalize;
+    padding: 0;
+    margin: 0;
+  }
 }

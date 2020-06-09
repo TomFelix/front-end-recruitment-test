@@ -83,9 +83,7 @@
     baconButton.addEventListener('click', () => {
       const item = document.getElementById('baconImage');
       const clone = item.cloneNode(true);
-  
       console.log('image cloned!');
-      
     });
   }
 })();
