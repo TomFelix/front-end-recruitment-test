@@ -86,4 +86,13 @@
       console.log('image cloned!');
     });
   }
+
+  const formSubmit = document.getElementById('form-submit');
+
+  formSubmit.addEventListener("submit", onSubmit);
+
+  function onSubmit() {
+    console.log('form submitted');
+  }
+
 })();
